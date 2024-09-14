@@ -1,0 +1,118 @@
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    :root {
+        --color-primario: #0A3871;
+        --color-secundario: #343A40;
+        --color-terciario: #072B61;
+        --color-cuaternario: #F3F5FC;
+        --color-quinteario: #;
+        --color-hover: #31363F;
+
+        --white: #FFFFFF;
+
+        --fuente-montserrat: 'Montserrat', sans-serif;
+        --fuente-krona: 'Krona One', sans-serif;
+        --fuente-inter: 'Inter', sans-serif;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        box-sizing: border-box;
+        background-color: var(--color-cuaternario);
+        color: var(--color-primario);
+    }
+
+    .presentacion__contenido {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        height: 100%;
+    }
+
+    .seccion__titulo__logo {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .presentacion__logo {
+        width: 15%;
+        height: auto;
+        margin: 3% 5%;
+        margin-bottom: 0%;
+    }
+
+    .Logo {
+        max-width: 50%;
+        max-height: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .presentacion__titulo {
+        font-size: 3rem;
+        font-family: var(--fuente-krona);
+        align-self: center;
+        margin: 1%;
+    }
+
+    .presentacion_subtitulo {
+        font-size: 1.5rem;
+        font-family: var(--fuente-inter);
+        font-weight: 600;
+        align-self: center;
+        margin: 1%;
+        text-align: center;
+        width: 100%;
+        height: 5%;
+    }
+
+    table {
+        width: 100%;
+        height: 40%;
+        border-collapse: collapse;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin: 0 auto; 
+        table-layout: auto; 
+    }
+
+    td {
+        padding: 2%;
+        text-align: center;
+    }
+
+    .gallery-image {
+        width: 150px; 
+        height: auto; 
+        max-width: 150px; 
+        max-height: auto; 
+        object-fit: cover; 
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-image:hover {
+        transform: scale(3.0);
+    }
+
+    .footer {
+        text-decoration: none;
+        background-color: var(--color-terciario);
+        padding: 3%;
+        color: var(--color-cuaternario);
+        text-align: center;
+        font-family: var(--fuente-krona);
+        font-size: 1.5rem;
+        height: 10%;
+        width: 100%;
+        align-self: flex-end;
+    }
+
+
